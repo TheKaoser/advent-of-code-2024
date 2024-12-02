@@ -2,3 +2,5 @@
 /.vscode
 /advent-of-code-2024.sln
 /x64
+/src/*
+!/src/*.cpp
