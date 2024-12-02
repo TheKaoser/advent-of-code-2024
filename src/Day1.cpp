@@ -7,7 +7,7 @@
 
 int main()
 {
-	std::ifstream file("Inputs/Input1.txt");
+    std::ifstream file("Inputs/Input1.txt");
     std::vector<int> list1;
     std::vector<int> list2;
     std::string line;
@@ -17,7 +17,6 @@ int main()
         while (std::getline(file, line))
         {
             std::stringstream ss(line);
-            std::string item;
 
             int num1, num2;
 
@@ -43,7 +42,7 @@ int main()
         total_abs_difference += std::abs(list1[i] - list2[i]);
     }
 
-    std::cout << "Total absolute difference: " << total_abs_difference << std::endl;
+    std::cout << total_abs_difference << std::endl;
 
     return 0;
 }
